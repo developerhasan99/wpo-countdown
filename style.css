@@ -1,0 +1,84 @@
+.woc-wrapper {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background-color: var(--background-color, #333);
+	transition: bottom 0.3s;
+}
+.woc-inner-wrapper {
+	height: 100%;
+	position: relative;
+}
+.woc-toggle-btn {
+	position: absolute;
+	right: 0;
+	top: 0;
+	translate: 0 -100%;
+	color: var(--color, #fff);
+	background-color: var(--background-color, #333);
+	height: 48px;
+	width: 48px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-top-left-radius: 10px;
+	cursor: pointer;
+	padding: 0;
+}
+
+.woc-toggle-btn svg {
+	transition: rotate 0.3s ease;
+}
+
+.woc-container {
+	max-width: 1320px;
+	margin: auto;
+	padding: 25px 15px;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 30px;
+	justify-content: space-between;
+	align-items: center;
+}
+.woc-titles-wrapper h3 {
+	color: var(--color, #fff);
+	margin-bottom: 0;
+	font-weight: 500;
+}
+.woc-titles-wrapper p {
+	color: var(--color, #fffb);
+	margin-bottom: 0;
+}
+
+.woc-countdown-wrapper {
+	display: flex;
+	align-items: center;
+	gap: 30px;
+	flex-wrap: wrap;
+}
+.woc-action-button {
+	padding: 10px 25px;
+	background-color: var(--background-color, #e91e63);
+	color: var(--color, #fff);
+	border-radius: 99px;
+	font-size: 18px;
+	font-weight: 500;
+	font-family: "Poppins", sans-serif;
+	cursor: pointer;
+}
+
+.woc-action-button:hover {
+	color: var(--color, #fff);
+	background-color: var(--background-color, #e91e63);
+}
+
+@media (max-width: 768px) {
+	.woc-container,
+	.woc-countdown-wrapper {
+		justify-content: center;
+	}
+	.woc-titles-wrapper > * {
+		text-align: center;
+	}
+}
